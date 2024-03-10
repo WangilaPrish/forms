@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bold; /* Make text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.name-container,
+.date-container,
+.gender-container,
+.address-container,
+.contact-container,
+.course-container,
+.buttons-container {
+    margin-bottom: 20px; /* Add space below each section */
+}
+
+.name-container .first-name,
+.name-container .last-name {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.name-container .last-name {
+    margin-right: 0;
+}
+
+.contact-container .telephone,
+.contact-container .email {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.contact-container .email {
+    margin-right: 0;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Highlight invalid inputs */
+form input:invalid,
+form textarea:invalid,
+form select:invalid {
+    border-color: red;
+}
+
+/* Highlight required but empty inputs */
+form input:required:invalid,
+form textarea:required:invalid,
+form select:required:invalid {
+    border-color: red;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form button[type="button"] {
+    background-color: #777;
+    margin-right: 10px;
+}
+
+form button[type="button"]:hover {
+    background-color: #555;
+}
